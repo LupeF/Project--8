@@ -337,4 +337,45 @@ template {
   display: none;
 }
 
+header h1 {
+  font-size: 25px;
+  font-family: "Fira Sans", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+main {
+  font-size: 15px;
+  font-family: "Roboto", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+main .box {
+  font-size: 13px;
+}
+
+body {
+  width: 70%;
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  width: fit-content;
+  padding: 1em;
+  border: 1px solid black;
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+}
+.container img {
+  height: 110px;
+  width: 110px;
+  border-radius: 360px;
+  margin-right: 1em;
+}
+.container .box h2, .container p {
+  margin: 5px;
+}
+
 /*# sourceMappingURL=style.css.map */

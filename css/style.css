@@ -354,12 +354,6 @@ main .box {
   font-size: 13px;
 }
 
-body {
-  width: 70%;
-  display: grid;
-  place-content: center;
-}
-
 .container {
   width: fit-content;
   padding: 1em;
@@ -376,6 +370,12 @@ body {
 }
 .container .box h2, .container p {
   margin: 5px;
+}
+
+body {
+  width: 70%;
+  display: grid;
+  place-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

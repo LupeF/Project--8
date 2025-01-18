@@ -1,0 +1,17 @@
+.container{
+    width: fit-content;
+    padding: 1em;
+    border: 1px solid black;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    img{
+        height: 110px;
+        width: 110px;
+        border-radius: 360px;
+        margin-right: 1em;
+    }
+    .box h2,p {
+        margin: 5px;
+    }
+};

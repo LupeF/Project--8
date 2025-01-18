@@ -354,7 +354,7 @@ main .box {
   font-size: 13px;
 }
 
-.container {
+.card {
   width: fit-content;
   padding: 1em;
   border: 1px solid black;
@@ -362,20 +362,24 @@ main .box {
   border-radius: 10px;
   align-items: center;
 }
-.container img {
+.card img {
   height: 110px;
   width: 110px;
   border-radius: 360px;
   margin-right: 1em;
 }
-.container .box h2, .container p {
+.card .box h2, .card p {
   margin: 5px;
 }
 
 body {
   width: 70%;
+  margin: 5em auto;
+}
+body .grid-container {
   display: grid;
-  place-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2em;
 }
 
 /*# sourceMappingURL=style.css.map */

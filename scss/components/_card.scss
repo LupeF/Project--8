@@ -5,13 +5,38 @@
     display: flex;
     border-radius: 10px;
     align-items: center;
-    img{
-        height: 110px;
-        width: 110px;
-        border-radius: 360px;
-        margin-right: 1em;
-    }
-    .box h2,p {
+    .box h2, .box p {
         margin: 5px;
     }
 };
+.avatar{
+    height: 110px;
+    width: 110px;
+    border-radius: 360px;
+    margin-right: 1em;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(100, 100, 100, 0.4);
+    .modal{
+        background-color: white;
+        width: 300px;
+        padding: 2em;
+        margin: 5em auto;
+        border-radius: 10px;
+        text-align: center;
+        .modal-close{
+            position: relative;
+            bottom: 1em;
+            left: 150px;
+            border: none;
+            background-color: white;
+
+        }
+    }
+}

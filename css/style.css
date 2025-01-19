@@ -362,19 +362,51 @@ main .box {
   border-radius: 10px;
   align-items: center;
 }
-.card img {
+.card .box h2, .card .box p {
+  margin: 5px;
+}
+
+.avatar {
   height: 110px;
   width: 110px;
   border-radius: 360px;
   margin-right: 1em;
 }
-.card .box h2, .card p {
-  margin: 5px;
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(100, 100, 100, 0.4);
+}
+.overlay .modal {
+  background-color: white;
+  width: 300px;
+  padding: 2em;
+  margin: 5em auto;
+  border-radius: 10px;
+  text-align: center;
+}
+.overlay .modal .modal-close {
+  position: relative;
+  bottom: 1em;
+  left: 150px;
+  border: none;
+  background-color: white;
 }
 
 body {
-  width: 70%;
-  margin: 5em auto;
+  position: relative;
+}
+body header h1 {
+  margin-top: 0;
+  padding-top: 2em;
+}
+body header, body .grid-container {
+  width: 80%;
+  margin: 0 auto;
 }
 body .grid-container {
   display: grid;

@@ -382,19 +382,26 @@ main .box {
   background-color: rgba(100, 100, 100, 0.4);
 }
 .overlay .modal {
-  background-color: white;
-  width: 300px;
-  padding: 2em;
-  margin: 5em auto;
-  border-radius: 10px;
+  position: relative;
+  background: #fff;
+  width: 375px;
+  padding: 30px 20px;
+  margin: 15% auto auto;
+  border: 1px solid #778;
+  border-radius: 5px;
   text-align: center;
 }
 .overlay .modal .modal-close {
-  position: relative;
-  bottom: 1em;
-  left: 150px;
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  cursor: pointer;
   border: none;
   background-color: white;
+}
+
+.hidden {
+  display: none;
 }
 
 body {

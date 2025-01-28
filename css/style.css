@@ -355,7 +355,7 @@ main .box {
 }
 
 .card {
-  width: fit-content;
+  width: 95%;
   padding: 1em;
   border: 1px solid black;
   display: flex;
@@ -365,12 +365,14 @@ main .box {
 .card .box h2, .card .box p {
   margin: 5px;
 }
+.card .box {
+  padding-left: 1em;
+}
 
-.avatar {
+img {
   height: 110px;
   width: 110px;
   border-radius: 360px;
-  margin-right: 1em;
 }
 
 .overlay {
@@ -418,7 +420,7 @@ body header, body .grid-container {
 body .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 2em;
+  grid-gap: 3em;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -7,7 +7,7 @@ const modal = document.querySelector('.modal');
 
 
 //************************************************ */
-//* functions that creat the card for each employee
+//* functions that create the card for each employee
 //********************************************** */
 function generateCard(employee) { 
     employee.results.forEach((employee, index) => {
@@ -45,13 +45,12 @@ const generateModal = (person) => {
         </div>
         `;
     overlay.classList.remove('hidden');
-    const closeBtn = document.querySelector('.modal-close');
+    const closeBtn = document.querySelector('.modal-close');  //adds event listener to close the modal
     closeBtn.addEventListener('click', () => {
         overlay.classList.add('hidden');
     });
        
 };
-
 
 //************************************************ */
 //* Checks the response and handles the response from the API
@@ -76,7 +75,6 @@ fetchData(urlAPI);
 //************************************************ */
 //* Event listener for the modal
 //********************************************** */
-
 grid.addEventListener('click', (e) => {
     const card = e.target.closest('.card')
     if(card){

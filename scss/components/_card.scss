@@ -1,5 +1,5 @@
 .card{
-    width: fit-content;
+    width: 95%;
     padding: 1em;
     border: 1px solid black;
     display: flex;
@@ -8,14 +8,16 @@
     .box h2, .box p {
         margin: 5px;
     }
+    .box{
+        padding-left: 1em
+    }
 };
-.avatar{
+
+img{
     height: 110px;
     width: 110px;
     border-radius: 360px;
-    margin-right: 1em;
 }
-
 .overlay{
     position: absolute;
     top: 0;

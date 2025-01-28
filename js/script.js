@@ -26,7 +26,8 @@ function generateCard(employee) {
 }
 
 const generateModal = (person) => {
-        overlay.innerHTML = `
+    const birthdate = new Date(person.dob.date);
+    overlay.innerHTML = `
         <div class="modal">
             <button class="modal-close">X</button>
             <div class="modal-content">
@@ -37,14 +38,18 @@ const generateModal = (person) => {
                     <p class="adress">${person.location.city}</p>
                     <hr />
                     <p>${person.phone}</p>
-                    <p class="address">${person.location.state}</p>
-                    <p>Birthday: ${person.registered.date}</p>
+                    <p class="address"> ${person.location.street.number} ${person.location.street.name}, ${person.location.state} ${person.location.postcode}</p>
+                    <p>Birthday: ${birthdate.getMonth()}/${birthdate.getDate()}/${birthdate.getFullYear()}</p>
                 </div>
             </div>
         </div>
         `;
-        overlay.classList.remove('hidden');
-
+    overlay.classList.remove('hidden');
+    const closeBtn = document.querySelector('.modal-close');
+    closeBtn.addEventListener('click', () => {
+        overlay.classList.add('hidden');
+    });
+       
 };
 
 
@@ -79,5 +84,5 @@ grid.addEventListener('click', (e) => {
         const person = employees[index];
         generateModal(person);
     }
-    
 });
+

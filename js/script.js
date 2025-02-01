@@ -30,6 +30,8 @@ const generateModal = (person) => {              //function that creates the mod
     const birthdate = new Date(person.dob.date);
     overlay.innerHTML = `
         <div class="modal">
+            <button class="prev modal-close">prev</button>
+            <button class="next modal-close">next</button>
             <button class="modal-close">X</button>
             <div class="modal-content">
                 <img class="avatar" src="${person.picture.large}" alt="avatar">
@@ -47,10 +49,26 @@ const generateModal = (person) => {              //function that creates the mod
         `;
     overlay.classList.remove('hidden');
     const closeBtn = document.querySelector('.modal-close');  //adds event listener to close the modal
+    const nextBtn = document.querySelector('.next');
+    const prevBtn = document.querySelector('.prev');
     closeBtn.addEventListener('click', () => {
         overlay.classList.add('hidden');
     });
        
+   nextBtn.addEventListener('click', ()=>{
+        const index = employees.indexOf(person);
+        if(index < employees.length - 1){
+            overlay.innerHTML = '';
+            generateModal(employees[index + 1]);
+        }
+   })
+   prevBtn.addEventListener('click', ()=>{
+    const index = employees.indexOf(person);
+    if(index > employees.length - 1){
+        overlay.innerHTML = '';
+        generateModal(employees[index - 1]);
+    }
+})
 };
 
 //************************************************ */

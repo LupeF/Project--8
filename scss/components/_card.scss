@@ -34,13 +34,23 @@ img{
         border: 1px solid #778;
         border-radius: 5px;
         text-align: center;
-        .modal-close{
+        .modal-close,
+        .prev,
+        .next{
             position: absolute;
             top: 5px;
-            right: 15px;
             cursor: pointer;
             border: none;
             background-color: white;
+        }
+        .modal-close{
+            right: 15px;
+        }
+        .next{
+            right:50px;
+        }
+        .prev{
+            right: 100px;
         }
     }
 }

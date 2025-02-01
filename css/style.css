@@ -393,13 +393,23 @@ img {
   border-radius: 5px;
   text-align: center;
 }
-.overlay .modal .modal-close {
+.overlay .modal .modal-close,
+.overlay .modal .prev,
+.overlay .modal .next {
   position: absolute;
   top: 5px;
-  right: 15px;
   cursor: pointer;
   border: none;
   background-color: white;
+}
+.overlay .modal .modal-close {
+  right: 15px;
+}
+.overlay .modal .next {
+  right: 50px;
+}
+.overlay .modal .prev {
+  right: 100px;
 }
 
 .hidden {

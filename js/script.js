@@ -63,8 +63,8 @@ const generateModal = (person) => {              //function that creates the mod
 
     })
     prevBtn.addEventListener('click', ()=>{
-    const index = employees.indexOf(person);
-    if(index > 0){
+        const index = employees.indexOf(person);
+        if(index > 0){
         overlay.innerHTML = '';
         generateModal(employees[index - 1]);
     }
